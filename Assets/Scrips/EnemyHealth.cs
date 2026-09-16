@@ -6,7 +6,7 @@ public class EnemyHealth : MonoBehaviour
 {
     public int currentHealth = 4;
     public int maxHealth = 4;
-    public GameManger gameManger;
+    public GameManager gameManager;
     public EnemySpawnerPlus spawner;
 
     public void SetSpawner(EnemySpawnerPlus enemySpawner)
@@ -36,9 +36,9 @@ public class EnemyHealth : MonoBehaviour
                 spawner.OnEnemyRemoved();
             }
 
-            if (gameManger != null)
+            if (gameManager != null)
             {
-                gameManger.EnemyDefeated();
+                gameManager.EnemyDefeated();
             }
             
             gameObject.SetActive(false);

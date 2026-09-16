@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public Text healthText;
     public Animator healthTextAnim;
 
-    public GameManger gameManager;
+    public GameManager gameManager;
 
     private bool isDead = false;
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManger : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public GameObject pausePanel;
     public GameObject winPanel;
