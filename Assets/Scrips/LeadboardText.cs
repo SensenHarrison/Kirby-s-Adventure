@@ -11,11 +11,13 @@ public class LeadboardText : MonoBehaviour
     }
     public void ShowLeaderboard()
     {
+        leaderboardText.text = "";
+
         List<LeaderboardEntry> entries = DataManager.Instance.GetLeaderboard();
 
         if (entries.Count == 0)
         {
-            leaderboardText.text += "No records yet.";
+            leaderboardText.text = "No records yet.";
             return;
         }
 
